@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Mwalimu Central | Home </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  </head>
+   
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#">Mwalimu Central | FAQ></a></div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            <div class="buttons">
+                <input type="button" value="Login">      
+                <input type="button" value="Register">
+                <input type="button" onclick="myFunction()" value="Dark Mode">
+            </div>
+        </nav>
+    
+  
+
+  
+  
+        <h2>Frequently Asked Questions</h2>
+        <br>
+        <button class="accordion">How can I get all the curriculum designs for all grades? </button>
+            <div class="panel">
+                <p>Good question. We do not have them on our site at the moment. However, by the time we launch at the end of this year, 2022, they will all be available. </p>
+    
+            </div>
+  
+        <button class="accordion">Is it only teachers who can get access to the information here?</button>
+            <div class="panel">
+                <p>Absolutely not! Any one, even students have access to this information. It is also readily available online. The difference is that we hope to consolidate the informtion here for ease of use.</p>
+            </div>
+  
+        <button class="accordion">Do we have to visit the site at a particular time?</button>
+            <div class="panel">
+                <p>We have no limitations! We are open 24~7~365. And you can always chat with us!</p>
+            </div>
+        <button class="accordion">Teachers have so much free time. Why are you doing their work for them? That is unfair!</button>
+            <div class="panel">
+                <p>Interesting observation. Remember that fire that burns brightly without any fuel?</p>
+            </div>
+  
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  
+  
+  
+  
+
+ 
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+
+    </header>
+
+</body>
+</html>
